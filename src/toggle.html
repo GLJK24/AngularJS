@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle Button - jQuery EasyUI Demo</title>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <style>
+        .choose {display: block; width:35px;height: 35px; background: url(./expand.png) center center no-repeat;}
+        .unchoose {background: url(./unexpand.png);}
+    </style>
+</head>
+<body>
+<span class="choose"></span>
+<script type="text/javascript">
+    $('.choose').toggle(1000, function(){
+        $(this).addClass('unchoose');
+    });
+</script>
+</body>
+</html>
